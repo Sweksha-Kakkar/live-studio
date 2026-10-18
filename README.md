@@ -1,10 +1,10 @@
-# Live Studio 🎙️⚡
+# Live Studio 
 
 A real-time web studio to test and interact with **Google Gemini Live API** models using bidirectional voice, real-time transcription, translation, and extended reasoning.
 
 ---
 
-## ✨ Features
+## Features
 
 - **Bidirectional Voice Streaming**: Talk in real time using your microphone with instant audio replies and interruption support.
 - **Support for 6 Gemini Live Models**:
@@ -20,7 +20,7 @@ A real-time web studio to test and interact with **Google Gemini Live API** mode
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```text
 live_studio_app/
@@ -38,7 +38,7 @@ live_studio_app/
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### 1. Prerequisites
 
@@ -79,6 +79,6 @@ Your browser will automatically open [http://localhost:8000](http://localhost:80
 
 ---
 
-## 📖 Live API Guide
+##  Live API Guide
 
 For detailed technical explanations, curl commands, and WebSocket message schemas, check out [`live_studio/LIVE_API_GUIDE.md`](live_studio/LIVE_API_GUIDE.md).
