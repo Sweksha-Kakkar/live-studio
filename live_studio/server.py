@@ -9,7 +9,7 @@ relays everything to the Live API, so the key never reaches the browser.
 
 import asyncio
 import json
-import webbrowser
+
 from pathlib import Path
 
 import uvicorn
@@ -182,5 +182,5 @@ async def live(ws: WebSocket):
 
 
 if __name__ == "__main__":
-    webbrowser.open("http://localhost:8000")
+  
     uvicorn.run(app, host="127.0.0.1", port=8000, log_level="warning")
