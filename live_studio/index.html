@@ -435,8 +435,10 @@ async function connect() {
     sys("Could not access the microphone: " + e.message, true);
     return;
   }
-
-  ws = new WebSocket(`ws://${location.host}/ws`);
+  
+const proto = location.protocol === "https:" ? "wss:" : "ws:";
+ws = new WebSocket(`${proto}//${location.host}/ws`);
+ 
   ws.binaryType = "arraybuffer";
   ws.onopen = () => ws.send(JSON.stringify({ model: current.id, ...settings }));
   ws.onmessage = ({ data }) => {
